@@ -10,7 +10,8 @@ public class Main {
         try {
             System.out.println("Dime un número de 2 cifras");
             int cifras = scanner.nextInt();
-            if (cifras > 99 || cifras < -99) throw new InputMismatchException();
+            int abs_cifras = Math.abs(cifras)
+            if (abs_cifras < 10 || abs_cifras > 99) throw new InputMismatchException()
 
             else {
                 Cifras cf = new Cifras(cifras);
